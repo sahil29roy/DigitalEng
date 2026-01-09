@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lens & Light | Photography Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">LENS<span>&</span>LIGHT</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Galleries</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery">
+        <h2>Recent Photoshoots</h2>
+        <div class="photo-grid">
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=500"
+                    alt="Work 1"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?q=80&w=500"
+                    alt="Work 2"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=500"
+                    alt="Work 3"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=500"
+                    alt="Work 4"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=500"
+                    alt="Work 5"></div>
+            <div class="photo-item"><img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=500"
+                    alt="Work 6"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2026 Lens & Light Photography. All rights reserved.</p>
+    </footer>
+
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header" onclick="toggleChat()">
+            <span>Ask Me Anything!</span>
+            <i class="fas fa-chevron-up" id="chatIcon"></i>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="bot-msg">Hi! How can I help you today?</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Type a message...">
+            <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
